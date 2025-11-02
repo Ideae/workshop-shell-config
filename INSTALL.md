@@ -12,10 +12,11 @@ curl -fsSL https://raw.githubusercontent.com/Ideae/workshop-shell-config/main/in
 
 Then reload:
 ```bash
-exec $SHELL -l
+renew
+# (or: exec $SHELL -l if 'renew' doesn't work yet - first time only)
 ```
 
-That's it! Try: `renew`
+That's it!
 
 ---
 
@@ -40,7 +41,7 @@ echo 'source ~/workshop-shell-config/load-all.zsh' >> ~/.bash_profile
 
 ### Step 3: Reload
 ```bash
-exec $SHELL -l
+renew  # (or: exec $SHELL -l)
 ```
 
 ### Step 4: Test

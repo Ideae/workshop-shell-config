@@ -24,7 +24,7 @@
 **Full command:**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Ideae/workshop-shell-config/main/install.sh | bash
-exec $SHELL -l
+renew  # (or: exec $SHELL -l if 'renew' not working yet)
 ```
 
 ## First Commands to Try

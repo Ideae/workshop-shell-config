@@ -32,8 +32,8 @@ curl -fsSL https://raw.githubusercontent.com/Ideae/workshop-shell-config/main/in
 
 Then reload your shell:
 ```bash
-exec $SHELL -l
-# Or simply: renew
+renew
+# (or: exec $SHELL -l if 'renew' doesn't work yet)
 ```
 
 ### Manual Install (Alternative)
@@ -46,7 +46,7 @@ git clone https://github.com/Ideae/workshop-shell-config.git ~/workshop-shell-co
 echo 'source ~/workshop-shell-config/load-all.zsh' >> ~/.zshrc
 
 # Reload
-exec $SHELL -l
+renew  # (or: exec $SHELL -l)
 ```
 
 ## 🔄 Updates
@@ -61,20 +61,22 @@ curl -fsSL https://raw.githubusercontent.com/Ideae/workshop-shell-config/main/up
 ### Option 2: Git Pull (Recommended)
 ```bash
 cd ~/workshop-shell-config && git pull
-exec $SHELL -l  # Reload to use updates
+renew  # Reload to use updates
 ```
 
-## 🛠️ Prerequisites
+## 🛠️ Optional Tools
 
-Some aliases require specific tools:
+All aliases work without any additional tools, but you can unlock more features:
 
-### Required for Claude Code aliases:
+### Claude Code (Recommended)
+For `cc`, `ccc`, `ccv` aliases:
 ```bash
 # Install Claude Code CLI
 # Visit: https://docs.anthropic.com/claude-code
 ```
 
-### Required for AI helpers:
+### GitHub Copilot (Optional)
+For `aisuggest` and `aiexplain` aliases:
 ```bash
 # Install GitHub CLI
 brew install gh
@@ -86,8 +88,7 @@ gh auth login
 gh extension install github/gh-copilot
 ```
 
-### All tools are optional!
-The config will gracefully skip any aliases for tools you don't have installed.
+**Note:** If tools aren't installed, their aliases simply won't be available. No errors, no warnings!
 
 ## ✅ Verification
 
