@@ -1,8 +1,8 @@
-# Claude Code & Codex Aliases
-# Quick shortcuts for Claude Code CLI and Codex CLI
+# AI Agent Aliases
+# Quick shortcuts for AI coding assistants (Claude Code, Codex, etc.)
 #
-# Requires: Claude Code CLI installed
-# Install: https://docs.anthropic.com/claude-code
+# Requires: Claude Code CLI or Codex CLI
+# Install Claude Code: https://docs.anthropic.com/claude-code
 
 # Claude Code shortcuts (skip permission prompts for faster workflow)
 alias cc='claude --dangerously-skip-permissions'
@@ -15,4 +15,4 @@ alias claude-done='afplay /System/Library/Sounds/Glass.aiff'
 alias claude-waiting='afplay /System/Library/Sounds/Ping.aiff'
 
 # Codex shortcuts (if you use Codex CLI)
-# alias codexdb='codex --dangerously-bypass-approvals-and-sandbox'
+alias codexdb='codex --dangerously-bypass-approvals-and-sandbox'
